@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,500,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    height: 30vh;
+}
+
+.left {
+    width: 25%;
+    height: 20vh;
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+.middle {
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headlines {
+    display: flex;
+    gap: 20px;
+    font-size: 0.8rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.img {
+    width: 400px;
+    height: 600px;
+}
+
+#Logo {
+    width: 70px;
+    height: 50px;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.right {
+    width: 25%;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.minimize {
+    font-size: 0.7rem;
+}
+
+.border {
+    margin-right: 20px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.sidebar {
+    padding-left: 1.6rem;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bildfan {
+    width: 100%;
+    padding-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.content {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.fake {
+    color: red;
+}
+
+a:hover {
+    color: red;
+    text-decoration:underline;
+}
+
+.blue {
+    border-radius: 50%;
+    background: blue;
+    height: 8px;
+    width: 8px;
+}
+.black {
+    border-radius: 50%;
+    background: black;
+    height: 8px;
+    width: 8px;
+}
+
+.red {
+    border-radius: 50%;
+    background: red;
+    height: 8px;
+    width: 8px;
+}
+.box {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.grey {
+    border-radius: 50%;
+    background: grey;
+    height: 8px;
+    width: 8px;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.move {
+    margin-bottom: 15px;
+}
+
+.headline {
+    padding-left: 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.joo {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+.dropdowns {
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h4 {
+   font-weight: 600;
+   font-size: 1rem;
+}
+
+.fan {
+    margin-left: 20px;
+}
+
+#autist {
+     margin-left: 20px;
+}
+
+ @media screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+  .img {
+      width: 200px;
+      height: auto;
+  }
+  .bildfan {
+     padding-right: 4rem;
+      align-items: center;
+      justify-content: center;
+  }
+  h4 {
+      font-size:0.8rem ;
+      display: none;
+  }
+  h1 {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  h3 {
+      font-size: 1rem;
+      display: none;
+  }
+  .boxfan {
+      align-items: center;
+      justify-content: center;
+  }
+  .minimize {
+      display: none;
+  }
+  #Logo {
+      margin-top: 50px;
+  }
+  .left {
+      gap: 0px;
+      flex-direction: column;
+      
+  }
+  p {
+      font-size: 0.5rem;
+  }
+  .bort {
+      display: none !important;
+  }
+  .border {
+      margin: 0;
+  }
+  .right {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 0;
+      display: none;
+  }
+  .headline {
+      width: 90%;
+  }
+  
+  .middle {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+    .sidebar {
+        display: none;
+    }
+    .headline {
+        width: 100%;
+        padding-right: 3rem;
+    }
+    h1 {
+        text-align: center;
+    }
+    .right {
+        display: none;
+    }
+    .bort {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    h4 {
+        display: none;
+    }
+    .bort {
+        display: none !important;
+    }
+    .bildfan {
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    h3 {
+        display: none;
+    }
+    .minimize {
+        display: none;
+    }
+    .header {
+        justify-content: center;
+        align-items: center;
+    }
+    .middle {
+        justify-content: center;
+        height: 30vh;
+    }
+}
